@@ -1,0 +1,20 @@
+[package]
+name = "enum-repr"
+version = "0.2.3"
+authors = ["Dmitry Safonov <dimanss47@dimanss47.net>"]
+description = "Derive enum repr conversions compatible with type aliases."
+repository = "https://github.com/dmnsafonov/enum-repr"
+readme = "README.md"
+keywords = ["constant", "discriminant", "enum", "repr"]
+categories = ["no-std", "rust-patterns"]
+license = "MIT OR Apache-2.0"
+edition = "2018"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "^0.4.8"
+quote = "^0.6.3"
+syn = { version = "^0.15.17", features = ["full"] }
+time = "0.1"
